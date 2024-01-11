@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-ticket</title>
+  <link rel="icon" href="imgs/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/faq.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <!-- Start Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a href="index.html">
+        <img class="navbar-brand" width="150px" src="imgs/logo.png"></img>
+      </a>  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="flight.html">Flight</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="bus.html">Bus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="search ps-3 pe-3 d-none d-lg-block">
+          <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+          <button class="button p-2 ps-3 pe-3"><a href="login.html">Login</a></button>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <!-- Start Breadcrumb -->
+  <div class="breadcrumb-holder ">
+    <div class="container bread">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="text-decoration-none" href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- End Breadcrumb -->
+  <!-- Start FAQ Intro -->
+  <section class="faq text-center">
+    <div class="container">
+      <h1>Frequently Asked Questions</h1>
+      <hr>
+      <p> Here You Will Find All Questions You Are Searching For And The Full Knowledgebase</p>
+    </div>
+  </section>
+  <!-- End FAQ Intro -->
+  <!-- Start FAQ Accordion -->
+  <section class="faq-questions">
+    <div class="container">
+      <div class="accordion warp" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              How do I pay for my booking?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              If you choose to pay by card you'll be redirected to our secure payment gateway where you'll have to provide your card information. You'll also be required to provide an authentication password/code for your card. If you don't have it, you'll need to contact your bank/card issuer company. The payment will be taken on the date stated during the booking process.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How much does it cost to cancel or amend a booking? Until when can I cancel or amend a booking free of charge?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Each booking has a cancellation policy where it states the date up to which you can cancel or amend it free of charge. No fees apply to cancellations or amendments made before that date. If your booking had already been paid for and the cancellation or amendment means the new price is lower than the original one, we'll refund the difference within 48 hours. In the event of cancelling or amending after this date the fee stated in the cancellation policy will apply. You can find this information on your voucher and in the confirmation email you received.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              What about if I cancel a booking that had already been paid for?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              If the booking is cancelled before the date stated in the cancellation policy, which you can find on your voucher and confirmation, we'll refund the full amount through the method used for payment within the next 48 hours. If you paid by bank transfer, you'll have to provide your bank account info for the refund.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              What does the price include?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              The price of your booking includes the services contracted with Reserving.com and which you'll find on your voucher and in the confirmation email (type and number of rooms, number of adults and children, meal plan, etc.). Taxes are also included.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              Will I receive a confirmation for my booking?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              You'll receive a confirmation email with all the information, which you always have available in your client panel, both on our website and in our app.
+              You need to print your voucher to present both at your accommodation and for any activities/extras included in your booking (ski lifts, excursions, tickets…).
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              Are my bookings made safely?
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              When making your booking you'll be able to see you're on an https site, by checking your address bar. This shows you're working with a secure server.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End FAQ Accordion -->
+
+  <!--Start Scroll to top-->
+  <div id="scroll-top">
+    <i class="fa-solid fa-rocket fa-2x"></i>
+  </div>
+  <!--End Scroll to top-->
+  <!-- Start Footer -->
+  <div class="footer pt-5 pb-4 text-white-50 text-center text-md-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-5">
+          <div class="info mb-3">
+            <a href="#">
+              <img src="imgs/logo.png" width="100px" alt="logo" class="mb-4">
+            </a>
+            <p class="mb-4">
+              The best way to book your ticket and enjoy your trip with E-ticket.
+            </p>
+            <div class="copyright">
+              Created By <span>Ammar Mohamed</span>
+              <div>&copy; 2022 - <span>Ammar</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <div class="links">
+            <h5 class="text-light">Links</h5>
+            <ul class="list-unstyled lh-lg">
+              <li><a href="#">home</a></li>
+              <li><a href="#">Flight</a></li>
+              <li><a href="#">Bus</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <div class="links">
+            <h5 class="text-light">About Us</h5>
+            <ul class="list-unstyled lh-lg">
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="contact">
+            <h5 class="text-light">Contact us</h5>
+            <p class="lh-lg mt-3 mb-5">
+              Get in touch with us via mail phone.
+              We are waiting for your call or message
+            </p>
+            <button class="button p-2 ps-4 pe-4">
+              <a href="#" class="">ammarmoha37@gmail.com</a>
+            </button>
+            <ul class="d-flex mt-5 list-unstyled gap-3">
+              <li>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i>
+                </a>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i>
+                </a>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-instagram fa-lg instagram rounded-circle p-2"></i>
+                </a>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i>
+                </a>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Footer -->
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+</html>

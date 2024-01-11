@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-ticket</title>
+  <link rel="icon" href="imgs/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <!-- Start Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a href="index.html">
+        <img class="navbar-brand" width="150px" src="imgs/logo.png"></img>
+      </a>  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="flight.html">Flight</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="bus.html">Bus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="search ps-3 pe-3 d-none d-lg-block">
+          <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+          <button class="button p-2 ps-3 pe-3"><a href="login.html">Login</a></button>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <!-- Start Leading -->
+  <div class="landing d-flex justify-content-center align-items-center">
+    <div class="text-center text-light">
+      <h1 class="fw-light">Taste the Comfortability</h1>
+      <p class="fs-6 text-white-50 mb-4">Book your ticket from anywhere in the world</p>
+      <button class="button p-2 ps-5 pe-5">
+        <a href="#">Get Start</a>
+      </button>
+    </div>
+  </div>
+  <!-- End leading -->
+  <!-- Start search -->
+  <div class="search-trip m-lg-4 d-lg-block text-center">
+    <section class="intro text-center">
+      <div class="container">
+        <h1>Where are you Going?</h1>
+        <hr>
+        <p class="lead">
+          Here you can fill the details about your trip and search to find the most suitable trip for you.
+        </p>
+      </div>
+    </section>
+    <!-- Start Switcher -->
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button class="toggle-btn" type="button" onclick="leftClick()">Flight</button>
+        <button class="toggle-btn" type="button" onclick="rightClick()">Bus</button>
+      </div>
+    </div>
+    <!-- End Swither -->
+    <div id="search-flight">
+      <div class="m-3 d-flex justify-content-center align-items-center">
+        <select>
+          <option class="activeselect" value="one-way">One-way</option>
+          <option value="round-trip">Round-trip</option>
+        </select>
+        <select>
+          <option class="activeselect" value="economy">Economy</option>
+          <option value="premiun-economy">Premium Economy</option>
+          <option value="business">Business</option>
+          <option value="first">First Class</option>
+        </select>
+        <select>
+          <option class="activeselect" value="1">1-bag</option>
+          <option value="2">2-bags</option>
+          <option value="3">3-bags</option>
+          <option value="4">4-bags</option>
+          <option value="5">5-bags <span class="max">(max)</span> </option>
+        </select>
+      </div>
+      <form class="search-form d-flex justify-content-center align-items-center">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="From?" name="from">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="To?" name="to">
+          </div>
+          <div class="col">
+            <input type="date" class="form-control" name="date">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="search-bus">
+      <div class="m-3 d-flex justify-content-center align-items-center">
+        <select>
+          <option class="activeselect" value="one-way">One-way</option>
+          <option value="round-trip">Round-trip</option>
+        </select>
+
+        <select>
+          <option class="activeselect" value="1">1-bag</option>
+          <option value="2">2-bags</option>
+          <option value="3">3-bags <span class="max">(max)</span> </option>
+        </select>
+      </div>
+      <form class="search-form d-flex justify-content-center align-items-center">
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="From?" name="from">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="To?" name="to">
+          </div>
+          <div class="col">
+            <input type="date" class="form-control" name="date">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div>
+      <button class="button search-btn m-3 p-2 ps-3 pe-3">
+        <a href="#">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          Search
+        </a>
+      </button>
+    </div>
+  </div>
+  <!--End Search-->
+  <!-- Start Best Companies -->
+  <section class="comp">
+    <div class="container best-companies">
+      <section class="intro text-center">
+        <div class="container">
+          <h1>Our Best Companies</h1>
+          <hr>
+          <p class="lead">
+            Here you Will Find Our Best & Famous Companies We Deal With And We Recommend It To You.
+          </p>
+        </div>
+      </section>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <img src="imgs/turkish.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">TURKISH AIRLINES</h5>
+              <p class="card-text">Turkish Airlines is the national flag carrier airline of Turkey. As of August 2019, it operates scheduled services to 315 destinations in Europe, Asia, Africa, and the Americas, making it the largest mainline carrier in the world by number of passenger destinations.</p>
+              <button class="button m-1 p-2 ps-4 pe-4">
+                <a href="about.html" class="">Read more</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img src="imgs/british.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">BRITISH AIRWAYS</h5>
+              <p class="card-text">British Airways is a global airline, bringing people, places and diverse cultures closer together for more than 100 years. Serving our community and planet is at the heart of everything we do, and we look forward to sharing our exciting sustainability initiatives with you.</p>
+              <button class="button m-1 p-2 ps-4 pe-4">
+                <a href="about.html" class="">Read more</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img src="imgs/qatar.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">QATAR</h5>
+              <p class="card-text">Qatar Airways is proud to be one of the youngest global airlines to serve all six continents, and thanks to our customers’ response to our offerings, we are also the world’s fastest-growing airline.</p>
+              <button class="button m-1 p-2 ps-4 pe-4">
+                <a href="about.html" class="">Read more</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <img src="imgs/egypt.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">EGYPT AIR</h5>
+              <p class="card-text">is the state-owned flag carrier[1] of Egypt. The airline is headquartered at Cairo International Airport, its main hub, operating scheduled passenger and freight services to 81 destinations in the Middle East, Europe, Africa, Asia,and The Americas.</p>
+              <button class="button m-1 p-2 ps-4 pe-4">
+                <a href="about.html" class="">Read more</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Best Companies -->
+  <!--Start Cards-->
+  <section class="intro-btrip text-center">
+    <div class="container">
+      <h1>Most Common Destination</h1>
+      <hr>
+      <p class="lead">
+        Here you Will Find Our Best & Famous Destination We Go To And We Recommend It To You.
+      </p>
+    </div>
+  </section>
+  <div class="container cards">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="single-box">
+                    <div class="img-area">
+                      <img src="imgs/london.jpg" alt="foto">
+                    </div>
+                    <div class="img-text">
+                      <h2 class="pt-5">London</h2>
+                      <p class="pt-3">London is the capital and largest city of England and the United Kingdom, with a population of just over 9 million.
+                      </p>
+                      <button class="button mt-5 p-2 ps-4 pe-4">
+                        <a href="about.html" class="">Read more</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="single-box">
+                    <div class="img-area">
+                      <img src="imgs/istanbul.jpg" alt="">
+                    </div>
+                    <div class="img-text">
+                      <h2 class="pt-5">Istanbul</h2>
+                      <p class="pt-3">Istanbul is the largest city in Turkey, serving as the country's economic, cultural and historic hub. The city straddles the Bosporus strait.
+                      </p>
+                      <button class="button mt-5 p-2 ps-4 pe-4">
+                        <a href="about.html" class="">Read more</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="single-box">
+                    <div class="img-area">
+                      <img src="imgs/cairo.jpg" alt="">
+                    </div>
+                    <div class="img-text">
+                      <h2 class="pt-5">Cairo</h2>
+                      <p class="pt-3">Cairo is the capital of Egypt and the largest city in the Arab world. The Greater Cairo metropolitan area.
+                      </p>
+                      <button class="button mt-5 p-2 ps-4 pe-4">
+                        <a href="about.html" class="">Read more</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ms-3">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="single-box">
+                    <div class="img-area">
+                      <img src="imgs/dubai.jpeg"  alt="">
+                    </div>
+                    <div class="img-text">
+                      <h2 class="pt-5">Dubai</h2>
+                      <p class="pt-3">Dubai  is the most populated city in the United Arab Emirates (UAE) and the capital of the Emirate of Dubai.
+                      </p>
+                      <button class="button mt-5 p-2 ps-4 pe-4">
+                        <a href="about.html" class="">Read more</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="single-box">
+                    <div class="img-area">
+                      <img src="imgs/newYork.jpeg" alt="">
+                    </div>
+                    <div class="img-text">
+                      <h2 class="pt-5">New York</h2>
+                      <p class="pt-3">New York ften called New York City (NYC) to distinguish it from the State of New York, is the most populous city in the United States. With a 2020 population of 8,804.
+                      </p>
+                      <button class="button mt-5 p-2 ps-4 pe-4">
+                        <a href="about.html" class="">Read more</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="single-box">
+                    <div class="img-area">
+                      <img src="imgs/paris.jpeg" alt="">
+                    </div>
+                    <div class="img-text">
+                      <h2 class="pt-5">Paris</h2>
+                      <p class="pt-3">Paris is the capital and most populous city of France, making it the 34th most densely populated city in the world in 2020.
+                      </p>
+                      <button class="button mt-5 p-2 ps-4 pe-4">
+                        <a href="about.html" class="">Read more</a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Cards-->
+  <!-- Start 2nd Card Slider -->
+  
+  <!-- End 2nd Card Slider -->
+  <!-- Start Why Choose us -->
+  <div class="choose-us">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="info col-lg-6">
+          <img src="imgs/choose.jpeg" alt="choose">
+        </div>
+        <div class="info col-lg-6">
+          <h2 class="h1">Why Choose Us</h2>
+          <p>It's our attention to the small stuff, scheduling of timelines and keen project management that makes us stand out from the rest.
+            We are creative, while keeping a close eye on the calendar and your budget.
+            Our strong sense of identification with client projects means that we are constantly striving to provide solutions, even for issues they aren't yet aware of.
+            To this end, we adopt a progressive approach to technology and marketing techniques.  
+          </p>
+          <p>
+            Because we're easy to work with. We take the work seriously, but not ourselves. We're not prickly, precious or pretentious.
+            First Impressions is comprised of specialists with corporate and agency experience that hail from various backgrounds. As such, First Impressions will never assign second-tier (or gasp! third tier!) support staff to any account.
+          </p>
+          <button class="button ms-5 mb-5 m-3 p-2 ps-4 pe-4">
+            <a href="about.html" class="">Read more</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Why Choose us -->
+  <!-- Start Stats Section -->
+  <section class="statistics text-center">
+      <div class="data">
+        <div class="container">
+          <h1>Our statistics</h1>
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <div class="stats">
+                <i class="fa-solid fa-plane-up fa-5x"></i>
+                <p>852</p>
+                <span>Flight Took Off</span>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="stats">
+                <i class="fa-solid fa-bus fa-5x"></i>
+                <p>6,935</p>
+                <span>Travelled countries</span>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="stats">
+                <i class="fa-solid fa-suitcase-rolling fa-5x"></i>
+                <p>27,500</p>
+                <span>Trips</span>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <div class="stats">
+                <i class="fa-solid fa-building fa-5x"></i>
+                <p>200</p>
+                <span>Companies</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- End Stats Section -->
+  <!--Start Scroll to top-->
+  <div id="scroll-top">
+    <i class="fa-solid fa-rocket fa-2x"></i>
+  </div>
+  <!--Start Scroll to top-->
+  <!-- Start Footer -->
+  <div class="footer pt-5 pb-4 text-white-50 text-center text-md-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-5">
+          <div class="info mb-3">
+            <a href="#">
+              <img src="imgs/logo.png" width="100px" alt="logo" class="mb-4">
+            </a>
+            <p class="mb-4">
+              The best way to book your ticket and enjoy your trip with E-ticket.
+            </p>
+            <div class="copyright">
+              Created By <span>Ammar Mohamed</span>
+              <div>&copy; 2022 - <span>Ammar</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <div class="links">
+            <h5 class="text-light">Links</h5>
+            <ul class="list-unstyled lh-lg">
+              <li><a href="#">home</a></li>
+              <li><a href="flight.html">Flight</a></li>
+              <li><a href="bus.html">Bus</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <div class="links">
+            <h5 class="text-light">About Us</h5>
+            <ul class="list-unstyled lh-lg">
+              <li><a href="login.html">Sign In</a></li>
+              <li><a href="login.html">Register</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="contact">
+            <h5 class="text-light">Contact us</h5>
+            <p class="lh-lg mt-3 mb-5">
+              Get in touch with us via mail phone.
+              We are waiting for your call or message
+            </p>
+            <button class="button p-2 ps-4 pe-4">
+              <a href="#" class="">ammarmoha37@gmail.com</a>
+            </button>
+            <ul class="d-flex mt-5 list-unstyled gap-3">
+              <li>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i>
+                </a>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i>
+                </a>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-instagram fa-lg instagram rounded-circle p-2"></i>
+                </a>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i>
+                </a>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Footer -->
+  <script src="js/script.js"></script>
+  <script src="js/jQindex.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+</html>

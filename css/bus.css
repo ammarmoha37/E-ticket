@@ -1,0 +1,264 @@
+:root {
+  --black-color: #312f2d;
+  --orange-color: #d38945;
+  --smoke-white: #f5f5f5;
+  --grey-color: #cccccc;
+}
+* {
+  box-sizing: border-box;
+}
+/* Start Breadcrumb */
+.breadcrumb-holder {
+  padding: 10px 0;
+  background: #e4e4f5;
+}
+div .bread {
+  margin-bottom: 0px;
+  height: 25px;
+}
+/* End Breadcrumb */
+/* Start Scroll Top */
+#scroll-top {
+  width: 50px;
+  height: 50px;
+  color: var(--black-color);
+  background: var(--orange-color);
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 50%;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+}
+/* End Scroll Top */
+/* Start Copmanies Intro */
+.copmanies {
+  padding: 40px 0 1px 0;
+  background: var(--grey-color);
+}
+.copmanies h1 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: -1px;
+  font-size: 50px;
+}
+.copmanies h1 ~ hr {
+  width: 50%;
+  display: inline-block;
+}
+/* End Copmanies Intro */
+/* Start Companies Cards */
+.bus-companies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--grey-color);
+  padding-bottom: 10px;
+}
+swiper {
+  width: 1200px;
+}
+section .slide-card .image {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  padding: 3px;
+  background: var(--orange-color);
+  z-index: 1000;
+}
+section .slide-card .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--smoke-white);
+}
+.card-container {
+  max-width: 1315px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content {
+  width: 1190px;
+  padding: 20px;
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.slide-card {
+  position: relative;
+  background: var(--smoke-white);
+  border-radius: 20px;
+  margin: 20px;
+  width: 350px !important;
+}
+.slide-card::before {
+  content: "";
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  background: var(--orange-color);
+  background-size: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.slide-card .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 550px;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+}
+.slide-card .media-icons {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slide-card .media-icons .brand {
+  color: var(--black-color);
+  margin-top: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.slide-card .media-icons .brand:hover {
+  color: #000;
+}
+.slide-card .company-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  color: var(--black-color);
+}
+.company-name .name {
+  font-size: 20px;
+  font-weight: 600;
+}
+.company-name .summery {
+  font-size: 20px;
+  font-weight: 300;
+}
+.slide-card .rating {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+.slide-card .rating .star {
+  font-size: 18px;
+  margin: 0 2px;
+  color: var(--orange-color);
+}
+.slide-card .card-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.slide-card .card-button button {
+  background: var(--orange-color);
+  color: #312f2d;
+  outline: none;
+  border: none;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.card-button button:hover {
+  background: #cf7d34;
+}
+#next,
+#prev {
+  color: var(--orange-color);
+  transition: color 0.3s ease;
+}
+#next:hover,
+#prev:hover {
+  color: #cf7d34;
+}
+#next::before,
+#prev::before,
+#next::after,
+#prev::after{
+  font-size: 50px;
+}
+#next {
+  right: 3;
+  
+}
+#prev {
+  left: 0;
+  bottom: 5px;
+}
+.swiper-pagination-bullet {
+  background-color: var(--orange-color) !important;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  color: #cf7d34 !important;
+}
+
+@media screen and (max-width: 768px) {
+  #next,
+  #prev {
+    display: none;
+  }
+  .slide-content {
+    margin: 0 10px;
+  }
+}
+/* End Companies Cards */
+/* Start Buses Intro */
+.buses {
+  padding: 40px 0 20px 0;
+}
+.buses h1 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: -1px;
+  font-size: 50px;
+}
+.buses h1 ~ hr {
+  width: 50%;
+  display: inline-block;
+}
+/* End Buses Intro */
+/* Start Buses Cards */
+.bus {
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.cards-container {
+  width: 80%;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+}
+.head {
+  margin-left: 75px;
+  color: var(--black-color);
+}
+.card {
+  background: var(--black-color);
+  color: var(--smoke-white);
+  border: none;
+  border-radius: 30px;
+  height: 100%;
+  border: 3px solid var(--black-color);
+  border-top: 4px solid var(--black-color);
+
+}
+.card .card-img-top {
+  border-radius: 30px 30px 0 30px;
+  height: 200px;
+  border: 3px solid var(--orange-color);
+}
+
+/* End Buses Cards */

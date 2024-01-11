@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-ticket - Payment</title>
+  <link rel="icon" href="imgs/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <!-- Start Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a href="index.html">
+        <img class="navbar-brand" width="150px" src="imgs/logo.png"></img>
+      </a>  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="flight.html">Flight</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="bus.html">Bus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="search ps-3 pe-3 d-none d-lg-block">
+          <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+          <button class="button p-2 ps-3 pe-3"><a href="login.html">Login</a></button>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <!-- Start Breadcrumb -->
+  <div class="breadcrumb-holder ">
+    <div class="container bread">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="text-decoration-none" href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Cart</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- End Breadcrumb -->
+  <!-- Start Cart Intro -->
+  <section class="cart text-center">
+    <div class="container">
+      <h1>Payment</h1>
+      <hr>
+      <p> Here Where You Will Finish Your Booking By Adding Your Payment Method.</p>
+    </div>
+  </section>
+  <!-- End cart Intro -->
+  <!-- Start Shopping Cart-->
+  <section class="h-100 h-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col">
+          <div class="card">
+            <div class="card-body p-4">
+              <div class="row">
+                <div class="col-lg-7">
+                  <h5 class="mb-3">
+                    <a href="#!" class="text-body">
+                      <i class="fas fa-long-arrow-alt-left me-2"></i>
+                      Continue booking
+                    </a>
+                  </h5>
+                  <hr>
+                  <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                      <p class="mb-1">Shopping cart</p>
+                      <p class="mb-0">You have 3 trips in your cart</p>
+                    </div>
+                    <div>
+                      <p class="mb-0"><span class="text-muted">Sort by:</span> <a href="#!"
+                          class="text-body">price <i class="fas fa-angle-down mt-1"></i></a></p>
+                    </div>
+                  </div>
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-row align-items-center">
+                          <div>
+                            <img
+                              src="imgs/istanbulcard.jpg"
+                              class="img-fluid rounded-3" alt="Shopping item">
+                          </div>
+                          <div class="ms-3">
+                            <h5>Istanbul</h5>
+                            <p class="small mb-0">flight form Egypt</p>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center">
+                          <div class="person">
+                            <h5 class="fw-normal mb-0">2</h5>
+                          </div>
+                          <div class="price">
+                            <h5 class="mb-0">$900</h5>
+                          </div>
+                          <a href="#!"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-row align-items-center">
+                          <div>
+                            <img
+                              src="imgs/ankara.jpg"
+                              class="img-fluid rounded-3" alt="Shopping item">
+                          </div>
+                          <div class="ms-3">
+                            <h5>Ankara</h5>
+                            <p class="small mb-0">bus trip from Istanbul</p>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center">
+                          <div class="person">
+                            <h5 class="fw-normal mb-0">2</h5>
+                          </div>
+                          <div class="price">
+                            <h5 class="mb-0">$50</h5>
+                          </div>
+                          <a href="#!"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-row align-items-center">
+                          <div>
+                            <img
+                              src="imgs/antalya.jpg"
+                              class="img-fluid rounded-3" alt="Shopping item">
+                          </div>
+                          <div class="ms-3">
+                            <h5>Antalya</h5>
+                            <p class="small mb-0">flight from Ankara</p>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center">
+                          <div class="person">
+                            <h5 class="fw-normal mb-0">2</h5>
+                          </div>
+                          <div class="price">
+                            <h5 class="mb-0">$250</h5>
+                          </div>
+                          <a href="#!"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="card mb-3">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between">
+                        <div class="d-flex flex-row align-items-center">
+                          <div>
+                            <img
+                              src="imgs/Fatih.jpg"
+                              class="img-fluid rounded-3" alt="Shopping item">
+                          </div>
+                          <div class="ms-3">
+                            <h5>Iphone 11 pro</h5>
+                            <p class="small mb-0">256GB, Navy Blue</p>
+                          </div>
+                        </div>
+                        <div class="d-flex flex-row align-items-center">
+                          <div class="person">
+                            <h5 class="fw-normal mb-0">2</h5>
+                          </div>
+                          <div class="price">
+                            <h5 class="mb-0">$900</h5>
+                          </div>
+                          <a href="#!"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+                <div class="col-lg-5">
+                  <div class="payment-card text-light rounded-3">
+                    <div class="card-body">
+                      <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="m-1">Card details</h4>
+                      </div>
+                      <p class="small mb-2">Card type</p>
+                      <a href="#!" type="submit" class="text-white">
+                        <i class="fab fa-cc-mastercard fa-2x me-2"></i>
+                      </a>
+                      <a href="#!" type="submit" class="text-white">
+                        <i class="fab fa-cc-visa fa-2x me-2"></i>
+                      </a>
+                      <a href="#!" type="submit" class="text-white">
+                        <i class="fab fa-cc-amex fa-2x me-2"></i>
+                      </a>
+                      <a href="#!" type="submit" class="text-white">
+                        <i class="fab fa-cc-paypal fa-2x"></i>
+                      </a>
+                      <form class="mt-4">
+                        <div class="form-outline form-white mb-4">
+                          <input type="text" id="typeName" class="form-control form-control-lg" siez="17"
+                            placeholder="Cardholder's Name" />
+                          <label class="form-label" for="typeName">Cardholder's Name</label>
+                        </div>
+                        <div class="form-outline form-white mb-4">
+                          <input type="text" id="typeText" class="form-control form-control-lg" siez="17"
+                            placeholder="1234 5678 9012 3457" minlength="19" maxlength="19" />
+                          <label class="form-label" for="typeText">Card Number</label>
+                        </div>
+                        <div class="row mb-4">
+                          <div class="col-md-6">
+                            <div class="form-outline form-white">
+                              <input type="text" id="typeExp" class="form-control form-control-lg"
+                                placeholder="MM/YYYY" size="7" id="exp" minlength="7" maxlength="7" />
+                              <label class="form-label" for="typeExp">Expiration</label>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-outline form-white">
+                              <input type="password" id="typeText" class="form-control form-control-lg"
+                                placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3" maxlength="3" />
+                              <label class="form-label" for="typeText">Cvv</label>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                      <hr class="my-4">
+                      <div class="d-flex justify-content-between">
+                        <p class="mb-2">Subtotal</p>
+                        <p class="mb-2">$1200.00</p>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <p class="mb-2">Commission</p>
+                        <p class="mb-2">$20.00</p>
+                      </div>
+                      <div class="d-flex justify-content-between mb-4">
+                        <p class="mb-2">Total(Incl. taxes)</p>
+                        <p class="mb-2">$1220.00</p>
+                      </div>
+                      <button type="button" class="button p-3">
+                        <div class="d-flex justify-content-between">
+                          <span>$1220.00 </span>
+                          <span> Checkout <i class="fas fa-long-arrow-alt-right ms-2"></i></span>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End  Shopping Cart-->
+  <!-- Start Footer -->
+  <div class="footer pt-5 pb-4 text-white-50 text-center text-md-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-5">
+          <div class="info mb-3">
+            <a href="#">
+              <img src="imgs/logo.png" width="100px" alt="logo" class="mb-4">
+            </a>
+            <p class="mb-4">
+              The best way to book your ticket and enjoy your trip with E-ticket.
+            </p>
+            <div class="copyright">
+              Created By <span>Ammar Mohamed</span>
+              <div>&copy; 2022 - <span>Ammar</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <div class="links">
+            <h5 class="text-light">Links</h5>
+            <ul class="list-unstyled lh-lg">
+              <li><a href="#">home</a></li>
+              <li><a href="#">Flight</a></li>
+              <li><a href="#">Bus</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <div class="links">
+            <h5 class="text-light">About Us</h5>
+            <ul class="list-unstyled lh-lg">
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="contact">
+            <h5 class="text-light">Contact us</h5>
+            <p class="lh-lg mt-3 mb-5">
+              Get in touch with us via mail phone.
+              We are waiting for your call or message
+            </p>
+            <button class="button p-2 ps-4 pe-4">
+              <a href="#" class="">ammarmoha37@gmail.com</a>
+            </button>
+            <ul class="d-flex mt-5 list-unstyled gap-3">
+              <li>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i>
+                </a>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i>
+                </a>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-instagram fa-lg instagram rounded-circle p-2"></i>
+                </a>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i>
+                </a>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Footer -->
+  <script src="js/script.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+</html>

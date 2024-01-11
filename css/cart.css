@@ -1,0 +1,64 @@
+:root {
+  --black-color: #312f2d;
+  --orange-color: #d38945;
+  --smoke-white: #f5f5f5;
+  --grey-color: #cccccc;
+}
+/* Start Breadcrumb */
+.breadcrumb-holder {
+  padding: 10px 0;
+  background: #e4e4f5;
+}
+div .bread {
+  margin-bottom: 0px;
+  height: 25px;
+}
+/* End Breadcrumb */
+/* Start Cart Intro */
+.cart {
+  padding: 40px 0 5px 0;
+  background: var(--grey-color);
+}
+.cart h1 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: -1px;
+  font-size: 50px;
+}
+.cart h1 ~ hr {
+  width: 70%;
+  display: inline-block;
+}
+/* End Cart Intro */
+.h-custom {
+  background: var(--grey-color);
+}
+.card .card-body .img-fluid {
+  width: 75px;
+  height: 75px;
+}
+.card .card-body .person {
+  width: 50px;
+}
+.card .card-body .price {
+  width: 80px;
+}
+.card .card-body a {
+  color: var(--orange-color);
+}
+.card .card-body .payment-card {
+  background: var(--black-color);
+}
+.card .payment-card .card-body {
+  color: var(--grey-color);
+}
+.card .card-body .button {
+  border-radius: 10px;
+}
+
+
+@media (min-width: 1025px) {
+  .h-custom {
+  height: 120vh !important;
+  }
+}
+

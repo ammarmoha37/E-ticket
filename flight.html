@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-ticket - Flights & Companies</title>
+  <link rel="icon" href="imgs/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flight.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <!-- Start Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a href="index.html">
+        <img class="navbar-brand" width="150px" src="imgs/logo.png"></img>
+      </a>  
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main" aria-controls="main" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="main">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3 active" aria-current="page"  href="flight.html">Flight</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="bus.html">Bus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="faq.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link p-2 p-lg-3" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <div class="search ps-3 pe-3 d-none d-lg-block">
+          <a href="cart.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
+        </div>
+          <button class="button p-2 ps-3 pe-3"><a href="login.html">Login</a></button>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <!-- Start Breadcrumb -->
+  <div class="breadcrumb-holder ">
+    <div class="container bread">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="text-decoration-none" href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Flight</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- End Breadcrumb -->
+  <!-- Start Companies Cards -->
+  <section>
+    <!-- Start Cart Intro -->
+    <section class="copmanies text-center">
+      <div class="container">
+        <h1>Flights Companies</h1>
+        <hr>
+        <p> Here Where You Will Find Our Flights Companies We Deal With.</p>
+      </div>
+    </section>
+    <!-- End cart Intro -->
+    <div class="flight-companies">
+      <div class="card-container swiper">
+        <div class="slide-content">
+          <div class="content swiper-wrapper">
+            <div class="slide-card swiper-slide">
+              <div class="card-content">
+                <div class="image">
+                  <img src="imgs/turkishAirlines.jpeg" alt="">
+                </div>
+                <div class="media-icons">
+                  <i class="fa-brands fa-facebook brand fa-lg pb-2"></i>
+                  <i class="fa-brands fa-twitter brand fa-lg pb-2"></i>
+                  <i class="fa-brands fa-instagram brand fa-lg pb-2"></i>
+                </div>
+                <div class="company-name">
+                  <span class="name">Turkish Airlines</span>
+                  <span class="summery">Turkish Airlines is the national flag carrier airline of Turkey. As of August 2019, it operates scheduled services to 315 destinations in Europe, Asia, Africa, and the Americas.</span>
+                </div>
+                <div class="rating">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star-half-stroke star"></i>
+                </div>
+                <div class="card-button">
+                  <button class="readMore mb-2">Read more</button>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card swiper-slide">
+              <div class="card-content">
+                <div class="image">
+                  <img src="imgs/british.png" alt="">
+                </div>
+                <div class="media-icons">
+                  <i class="fa-brands fa-facebook brand fa-lg pb-2"></i>
+                  <i class="fa-brands fa-twitter brand fa-lg pb-2"></i>
+                  <i class="fa-brands fa-instagram brand fa-lg pb-2"></i>
+                </div>
+                <div class="company-name">
+                  <span class="name">BRITISH AIRWAYS</span>
+                  <span class="summery"> British Airways is a global airline, bringing people, places and diverse cultures closer together for more than 100 years. Serving our community and planet is at the heart of everything we do.</span>
+                </div>
+                <div class="rating">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star-half-stroke star"></i>
+                </div>
+                <div class="card-button">
+                  <button class="readMore">Read more</button>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card swiper-slide">
+              <div class="card-content">
+                <div class="image">
+                  <img src="imgs/egyptair.jpg" alt="">
+                </div>
+                <div class="media-icons">
+                  <i class="fa-brands fa-facebook brand fa-lg pb-2"></i>
+                  <i class="fa-brands fa-twitter brand fa-lg pb-2"></i>
+                  <i class="fa-brands fa-instagram brand fa-lg pb-2"></i>
+                </div>
+                <div class="company-name">
+                  <span class="name">EGYPT AIR</span>
+                  <span class="summery">Egyptair is an Egyptian national airline. Dating back to 1932, it was the first flight, it was the first airline founded in the Middle East and the seventh airline all over the world.</span>
+                </div>
+                <div class="rating">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star-half-stroke star"></i>
+                </div>
+                <div class="card-button">
+                  <button class="readMore mb-2">Read more</button>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card swiper-slide">
+              <div class="card-content">
+                <div class="image">
+                  <img src="imgs/emirates.png" alt="">
+                </div>
+                <div class="media-icons">
+                  <i class="fa-brands fa-facebook brand fa-lg pb-2"></i>
+                  <i class="fa-brands fa-twitter brand fa-lg pb-2"></i>
+                  <i class="fa-brands fa-instagram brand fa-lg pb-2"></i>
+                </div>
+                <div class="company-name">
+                  <span class="name">Emirates Airlines</span>
+                  <span class="summery">Emirates is one of two flag carriers of the United Arab Emirates (the other being Etihad Airways). Based in Garhoud, Dubai, the airline is a subsidiary of The Emirates Group.</span>
+                </div>
+                <div class="rating">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star-half-stroke star"></i>
+                </div>
+                <div class="card-button">
+                  <button class="readMore mb-2">Read more</button>
+                </div>
+              </div>
+            </div>
+            <div class="slide-card swiper-slide">
+              <div class="card-content">
+                <div class="image">
+                  <img src="imgs/pegasus.png" alt="">
+                </div>
+                <div class="media-icons">
+                  <i class="fa-brands fa-facebook brand fa-lg pb-2"></i>
+                  <i class="fa-brands fa-twitter brand fa-lg pb-2"></i>
+                  <i class="fa-brands fa-instagram brand fa-lg pb-2"></i>
+                </div>
+                <div class="company-name">
+                  <span class="name">PeGasus Airlines</span>
+                  <span class="summery">Pegasus Airlines, sometimes stylized as Flypgs, is a Turkish low-cost carrier headquartered in the Kurtköy area of Pendik, Istanbul with bases at several Turkish airports.</span>
+                </div>
+                <div class="rating">
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star star"></i>
+                  <i class="fa-solid fa-star-half-stroke star"></i>
+                </div>
+                <div class="card-button">
+                  <button class="readMore mb-2">Read more</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="next" class="swiper-button-next"></div>
+        <div id="prev" class="swiper-button-prev"></div>
+        <div id="dot" class="swiper-pagination dot"></div>
+      </div>
+    </div>
+  </section>
+  <!-- End Companies Cards -->
+  <!-- Start Flights Cards -->
+  <div class="flight">
+    <!-- Start Flights Intro -->
+    <section class="flights text-center">
+      <div class="container">
+        <h1>Flights</h1>
+        <hr>
+        <p>Here Where You Will Find The Flights We Offer.</p>
+      </div>
+    </section>
+    <!-- End Flights Intro -->
+    <div class="cards-container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="imgs/istanbulcard.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Istanbul</h3>
+              <p class="card-text">Istanbul is the largest city in Turkey, serving as the country's economic, cultural and historic hub. The city straddles the Bosporus Strait, lying in both Europe and Asia, and has a population of over 15 million residents. Istanbul is the most populous European city and the world's 15th-largest city.</p>
+              <div class="rating">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+              </div>
+              <button class="button mt-4 p-2 ps-3 pe-3"><a href="#">Read More</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imgs/cairo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Cairo</h3>
+              <p class="card-text">Cairo is the capital of Egypt and the city-state Cairo Governorate, and is the country's largest city, home to 10 million people. It is also part of the largest urban agglomeration in Africa, the Arab world and the Middle East: The Greater Cairo metropolitan area is the 12th-largest in the world</p>
+              <div class="rating">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+              </div>
+              <button class="button mt-4 p-2 ps-3 pe-3"><a href="#">Read More</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imgs/ankara.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Ankara</h3>
+              <p class="card-text">Ankara is the capital city of Turkey and the country's second largest city after Istanbul. The city has a population (as of 2019) of 5,5 million, and a mean elevation of 850 m (2800 ft). It was formerly known as Angora. Ankara also serves as the capital of the Province of Ankara.</p>
+              <div class="rating">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+              </div>
+              <button class="button mt-4 p-2 ps-3 pe-3"><a href="#">Read More</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imgs/antalya.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Antalya</h3>
+              <p class="card-text">Antalya is the eighth-most populous city in Turkey as well as the capital of Antalya Province. Located on Anatolia's southwest coast bordered by the Taurus Mountains, Antalya is the largest Turkish city on the Mediterranean coast outside the Aegean region with over one million people in its metropolitan area.</p>
+              <div class="rating">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+              </div>
+              <button class="button mt-4 p-2 ps-3 pe-3"><a href="#">Read More</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imgs/london.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">London</h3>
+              <p class="card-text">London is the capital and largest city of England and the United Kingdom, with a population of around 8.8 million. As one of the world's major global cities, London exerts a strong influence on world art, entertainment, fashion, commerce and finance, education, health care, media, science and technology, tourism, transport, and communications.</p>
+              <div class="rating">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+              </div>
+              <button class="button mt-4 p-2 ps-3 pe-3"><a href="#">Read More</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imgs/dubai.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Dubai</h3>
+              <p class="card-text">Dubai is the most populous city in the United Arab Emirates (UAE) and the capital of the Emirate of Dubai, the most populated of the country's seven emirates. Established in the 18th century as a small fishing village, Dubai grew into a regional trading hub in the early 20th century and grew rapidly in the late 20th and early 21st centuries with a focus on tourism and luxury.</p>
+              <div class="rating">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+              </div>
+              <button class="button mt-4 p-2 ps-3 pe-3"><a href="#">Read More</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imgs/newYork.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">New York</h3>
+              <p class="card-text">New York, often called New York City or simply NYC, is the most populous city in the United States located at the southern tip of New York State on one of the world's largest natural harbors. The city comprises five boroughs, each of which is coextensive with a respective county.</p>
+              <div class="rating">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+              </div>
+              <button class="button mt-4 p-2 ps-3 pe-3"><a href="#">Read More</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imgs/paris.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Paris</h3>
+              <p class="card-text">Paris is the capital and most populous city of France. With an official estimated population of 2,102,650 residents as of 1 January 2023[2] in an area of more than 105 km2 (41 sq mi),[5] Paris is the fourth-most populated city in the European Union and the 30th most densely populated city in the world in 2022.</p>
+              <div class="rating">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+              </div>
+              <button class="button mt-4 p-2 ps-3 pe-3"><a href="#">Read More</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imgs/tokyo.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Tokyo</h3>
+              <p class="card-text">Tokyo, officially the Tokyo Metropolis, is the capital of Japan and the most populous city in the world with a population of over 14 million residents as of 2023. The Tokyo metropolitan area, which includes Tokyo and nearby prefectures, is the world's most-populous metropolitan area.</p>
+              <div class="rating">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+              </div>
+              <button class="button mt-4 p-2 ps-3 pe-3"><a href="#">Read More</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imgs/berlin.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Berlin</h3>
+              <p class="card-text">Berlin is the capital and largest city of Germany by both area and population. Its more than 3.85 million inhabitants make it the European Union's most populous city, according to population within city limits. The greater urban area of Berlin is one of the States of Germany.</p>
+              <div class="rating">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+              </div>
+              <button class="button mt-4 p-2 ps-3 pe-3"><a href="#">Read More</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imgs/moscow.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Moscow</h3>
+              <p class="card-text">Moscow is the capital and largest city of Russia. The city stands on the Moskva River in Central Russia, with a population estimated at 13.0 million residents within the city limits, over 18.8 million residents in the urban area, and over 21.5 million residents in the metropolitan area.</p>
+              <div class="rating">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+              </div>
+              <button class="button mt-4 p-2 ps-3 pe-3"><a href="#">Read More</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="imgs/roma.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h3 class="card-title">Roma</h3>
+              <p class="card-text">Rome is the capital city of Italy. It is also the capital of the Lazio region, the centre of the Metropolitan City of Rome Capital, and a special comune (municipality) named Comune di Roma Capitale. With 2,860,009 residents in 1,285 km2 (496.1 sq mi).</p>
+              <div class="rating">
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star star"></i>
+                <i class="fa-solid fa-star-half-stroke star"></i>
+              </div>
+              <button class="button mt-4 p-2 ps-3 pe-3"><a href="#">Read More</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Flights Cards -->
+  <!--Start Scroll to top-->
+  <div id="scroll-top">
+    <i class="fa-solid fa-rocket fa-2x"></i>
+  </div>
+  <!--End Scroll to top-->
+  <!-- Start Footer -->
+  <div class="footer pt-5 pb-4 text-white-50 text-center text-md-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-5">
+          <div class="info mb-3">
+            <a href="#">
+              <img src="imgs/logo.png" width="100px" alt="logo" class="mb-4">
+            </a>
+            <p class="mb-4">
+              The best way to book your ticket and enjoy your trip with E-ticket.
+            </p>
+            <div class="copyright">
+              Created By <span>Ammar Mohamed</span>
+              <div>&copy; 2022 - <span>Ammar</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <div class="links">
+            <h5 class="text-light">Links</h5>
+            <ul class="list-unstyled lh-lg">
+              <li><a href="#">home</a></li>
+              <li><a href="#">Flight</a></li>
+              <li><a href="#">Bus</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2">
+          <div class="links">
+            <h5 class="text-light">About Us</h5>
+            <ul class="list-unstyled lh-lg">
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">Register</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="contact">
+            <h5 class="text-light">Contact us</h5>
+            <p class="lh-lg mt-3 mb-5">
+              Get in touch with us via mail phone.
+              We are waiting for your call or message
+            </p>
+            <button class="button p-2 ps-4 pe-4">
+              <a href="#" class="">ammarmoha37@gmail.com</a>
+            </button>
+            <ul class="d-flex mt-5 list-unstyled gap-3">
+              <li>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-facebook fa-lg facebook rounded-circle p-2"></i>
+                </a>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-twitter fa-lg twitter rounded-circle p-2"></i>
+                </a>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-instagram fa-lg instagram rounded-circle p-2"></i>
+                </a>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-linkedin fa-lg linkedin rounded-circle p-2"></i>
+                </a>
+                <a class="d-inline-block text-light" href="#">
+                  <i class="fa-brands fa-youtube fa-lg youtube rounded-circle p-2"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Footer -->
+  <script src="js/script.js"></script>
+  <script src="js/jQflight.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/flight.js"></script>
+</body>
+  
+</html>

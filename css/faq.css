@@ -1,0 +1,60 @@
+:root {
+  --black-color: #312f2d;
+  --orange-color: #d38945;
+  --smoke-white: #f5f5f5;
+  --grey-color: #cccccc;
+}
+/* Start Breadcrumb */
+.breadcrumb-holder {
+  padding: 10px 0;
+  background: #e4e4f5;
+}
+div .bread {
+  margin-bottom: 0px;
+  height: 25px;
+}
+/* End Breadcrumb */
+/* Start FAQ Intro */
+.faq {
+  padding: 40px 0;
+}
+.faq h1 {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: -1px;
+  font-size: 50px;
+}
+.faq h1 ~ hr {
+  width: 70%;
+  display: inline-block;
+}
+/* End FAQ Intro */
+/* Start FAQ Acoordion */
+.faq-questions {
+  margin-bottom: 50px;
+}
+.faq-questions .accordion {
+  border: 12px solid var(--black-color);
+  border-radius: 30px;
+  box-shadow:  0 20px 20px rgba(0, 0, 0, 0.5);
+}
+.faq-questions .accordion:first-child {
+  border-radius: 3px;
+}
+.faq-questions .accordion-header {
+  padding: 15px;
+  background: var(--orange-color);
+}
+.faq-questions .accordion-button {
+  background: var(--orange-color);
+  color: var(--black-color);
+}
+.accordion-button[aria-expanded="true"]{
+  color: var(--black-color);
+  border-radius: 30px;
+  border: none;
+}
+.accordion-body {
+  background: var(--grey-color);
+  color: var(--black-color);
+}
+/* End FAQ Acoordion */
